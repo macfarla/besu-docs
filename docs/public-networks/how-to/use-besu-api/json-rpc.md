@@ -383,7 +383,9 @@ The block parameter can have one of the following values:
   canonical block.
   See [this example](https://github.com/besu-eth/besu/blob/a2dedb0b2c7980cdc35db8eb4c094f2eb0dc7deb/ethereum/api/src/test/resources/org/hyperledger/besu/ethereum/api/jsonrpc/eth/eth_getBalance_blockHashObjectCanonical.json).
 
-  :::note
+  <details>
+  <summary>Methods that support `blockHash`</summary>
+  <div>
 
   Only the following methods support the `blockHash` parameter:
 
@@ -406,7 +408,8 @@ The block parameter can have one of the following values:
   - [`eth_getTransactionCount`](../../reference/api/eth/state.md#eth_gettransactioncount)
   - [`eth_simulateV1`](../../reference/api/eth/execute.md#eth_simulatev1)
 
-  :::
+  </div>
+  </details>
 
 - `earliest` : _tag_ - The earliest (genesis) block.
 - `latest` : _tag_ - The most recent block.
