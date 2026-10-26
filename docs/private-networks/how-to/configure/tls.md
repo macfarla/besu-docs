@@ -91,6 +91,16 @@ Set [`--rpc-http-tls-ca-clients-enabled`](../../../public-networks/reference/opt
 
 :::
 
+:::warning CA compromise risk
+
+Enabling `--rpc-http-tls-ca-clients-enabled` trusts any client certificate that chains to a
+certificate authority in the JVM truststore, including public CAs. Following the
+[October 2026 eMudhra CA compromise](https://github.com/besu-eth/besu/wiki/Incident-Report-2026-10-26-eMudhra-CA-Compromise),
+prefer [`--rpc-http-tls-known-clients-file`](../../../public-networks/reference/options.md#rpc-http-tls-known-clients-file),
+or a truststore that contains only your own CA, to authenticate clients.
+
+:::
+
 <!-- Links -->
 
 [Configure the client for TLS]: https://docs.web3signer.consensys.net/how-to/configure-tls
